@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+   <link rel="stylesheet" href="./bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <h3>ISS-Tracker</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <!-- <button onclick="startTracking()">start</button>
+    <button onclick="stopTracking()">stop</button> -->
+    <div class="buttons"></div>
+    <script src="./app.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrHQlrqX4Dy66ywnC-Cs3LiKlhUkR6kvc&callback=initMap">
+    </script>
+  </body>
+</html>
